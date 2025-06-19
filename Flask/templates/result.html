@@ -40,12 +40,6 @@
             color: #FFD700;
             font-weight: bold;
         }
-        img {
-            margin-top: 30px;
-            max-width: 100%;
-            border-radius: 8px;
-            box-shadow: 0 4px 12px rgba(255, 255, 255, 0.1);
-        }
         @media screen and (max-width: 600px) {
             .result-container {
                 padding: 25px;
@@ -70,7 +64,6 @@
             Estimated demand: 
             <span class="prediction">{{ prediction_text }}</span>
         </p>
-        <img src="{{ url_for('static', filename='inventory.png') }}" alt="Inventory Forecasting Illustration">
     </div>
 </body>
 </html>
